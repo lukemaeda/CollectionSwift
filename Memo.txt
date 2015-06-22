@@ -1,0 +1,32 @@
+@IBAction func proc01(sender: UIButton) {
+
+// 配列作成
+let arr:[Int] = [10, 20, 30, 40, 50]
+
+// 配列の範囲
+var arr00 = arr[1...2] // [20, 30]
+
+// 型は初期値から推測されるので、初期値を与える場合は型を明示する必要はありません。
+let arr01 = ["勇者", "戦士", "魔法使い", "僧侶"]
+let arr02 = [10, 20, 30, 40, 50]
+
+// 配列作成（別記１）
+//        let arr: [Int] = [10, 20, 30]
+//        //各データを取得
+//        let arr1:Int = arr[0] // 10
+//        let arr2:Int = arr[1] // 20
+//        let arr3:Int = arr[2] // 30
+
+
+// 要素数
+let cnt:Int = arr.count // 5
+
+// 各件数
+var cnt1:Int = arr.capacity // 5
+var cnt2:Int = arr.startIndex // 0
+var cnt3:Int = arr.endIndex // 5
+
+// 値を取得
+for (var i = 0; i < cnt ; i++) {
+println(arr[i]) //　10, 20, 30, 40, 50
+}
